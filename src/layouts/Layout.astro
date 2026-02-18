@@ -4,10 +4,17 @@ import Footer from "../components/Footer.astro";
 
 interface Props {
   title?: string;
+  description?: string;
   footerColClass?: string;
 }
 
-const { title = "sugiro.ai", footerColClass } = Astro.props;
+const {
+  title = "sugiro.ai",
+  description = "Lula Rocha's portfolio — design tools, AI projects, and creative work at the intersection of art, design, and technology.",
+  footerColClass,
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://sugiro.ai");
 ---
 
 <!doctype html>
@@ -15,6 +22,25 @@ const { title = "sugiro.ai", footerColClass } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="author" content="Lula Rocha" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="sugiro.ai" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
