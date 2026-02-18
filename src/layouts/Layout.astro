@@ -24,8 +24,10 @@ const { title = "sugiro.ai", footerColClass } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/sugiro-legs.svg" />
     <title>{title}</title>
   </head>
-  <body class="min-h-screen bg-dark text-white font-sans antialiased pt-1 px-6 desktop:px-12 pb-12">
-    <slot />
+  <body class="min-h-screen bg-dark text-white font-sans antialiased pt-1 px-6 desktop:px-12 pb-8 flex flex-col">
+    <div class="flex-1">
+      <slot />
+    </div>
     <Footer colClass={footerColClass} />
   </body>
 </html>
