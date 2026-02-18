@@ -3,32 +3,12 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="about me — sugiro.ai" description="Lula Rocha is a designer, educator, and founder of Rocha Design and Metapix, with over 30 years of experience in visual identity, graphic design, and web design." footerColClass="col-span-12 desktop:col-start-7 desktop:col-span-2">
-<style>
-  .about-link {
-    position: relative;
-  }
-  .about-link::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: white;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-  }
-  .about-link:hover::after {
-    transform: scaleX(1);
-  }
-</style>
-  <main class="grid grid-cols-12 gap-4 desktop:items-start">
+  <main class="page-container">
     <!-- Site Title -->
     <section class="col-span-12 desktop:col-span-6">
       <a
         href="/"
-        class="text-[52px] font-extralight text-white"
+        class="site-title"
       >
         sugiro.ai
       </a>
@@ -36,8 +16,8 @@ import Layout from "../layouts/Layout.astro";
 
     <!-- Content -->
     <section class="col-span-12 desktop:col-span-6 mt-4">
-      <h2 class="text-xl font-medium text-orange-500 mb-4">about me</h2>
-      <ul class="text-sm font-light list-none">
+      <h2 class="section-heading">about me</h2>
+      <ul class="body-text list-none">
         <li class="pb-4">Hi, I'm Lula Rocha, here is my short resume:</li>
         <li class="pb-4">Founder: Rocha Design 1995, Metapix 2011.</li>
         <li class="pb-4">Over 30 years of experience in Visual Identity, Graphic Design, and Web Design projects.</li>
@@ -46,7 +26,7 @@ import Layout from "../layouts/Layout.astro";
         <li class="pb-4">Teacher in the Undergraduate Design Program at PUC-Rio since 1989.</li>
         <li class="pb-4">Teacher in the Postgraduate Program in Textile Design at SENAI/CETIQT-RJ 2012–2013.</li>
         <li class="pb-4">Teacher at EARJ American School of Rio de Janeiro 2012–2014.</li>
-        <li>Over 700 video lessons on Photoshop, Illustrator, and InDesign, created for Metapix courses. (<a href="https://www.youtube.com/@metapixvideos" target="_blank" class="about-link">available on YouTube</a>)</li>
+        <li>Over 700 video lessons on Photoshop, Illustrator, and InDesign, created for Metapix courses. (<a href="https://www.youtube.com/@metapixvideos" target="_blank" class="text-link">available on YouTube</a>)</li>
       </ul>
     </section>
   </main>

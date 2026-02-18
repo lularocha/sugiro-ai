@@ -3,32 +3,12 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="about sugiro — sugiro.ai" description="sugiro.ai collects Lula Rocha's recent work with AI tools, building on years of creative programming and code-driven design experiments at sugiro.io." footerColClass="col-span-12 desktop:col-start-7 desktop:col-span-2">
-<style>
-  .about-link {
-    position: relative;
-  }
-  .about-link::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: white;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-  }
-  .about-link:hover::after {
-    transform: scaleX(1);
-  }
-</style>
-  <main class="grid grid-cols-12 gap-4 desktop:items-start">
+  <main class="page-container">
     <!-- Site Title -->
     <section class="col-span-12 desktop:col-span-6">
       <a
         href="/"
-        class="text-[52px] font-extralight text-white"
+        class="site-title"
       >
         sugiro.ai
       </a>
@@ -36,14 +16,14 @@ import Layout from "../layouts/Layout.astro";
 
     <!-- Content -->
     <section class="col-span-12 desktop:col-span-6 mt-4">
-      <h2 class="text-xl font-medium text-orange-500 mb-4">about sugiro</h2>
-      <p class="text-sm font-light" style="line-height: 1.8;">
-        I started the original Sugiro Design website years ago as a place to experiment with code-driven design, using tools like Processing, JavaScript, and Python. That site is still live at <a href="https://sugiro.io" class="about-link" target="_blank" rel="noopener noreferrer">sugiro.io</a>
+      <h2 class="section-heading">about sugiro</h2>
+      <p class="body-text" style="line-height: 1.65;">
+        I started the original Sugiro Design website years ago as a place to experiment with code-driven design, using tools like Processing, JavaScript, and Python. That site is still live at <a href="https://sugiro.io" class="text-link" target="_blank" rel="noopener noreferrer">sugiro.io</a>
       </p>
-      <p class="text-sm font-light mt-4" style="line-height: 1.8;">
+      <p class="body-text mt-4" style="line-height: 1.65;">
         This new site — sugiro.ai — is where I collect and share my work, with a focus on recent projects made with AI tools.
       </p>
-      <p class="text-sm font-light mt-4" style="line-height: 1.8;">
+      <p class="body-text mt-4" style="line-height: 1.65;">
         Hope you like it.
       </p>
     </section>

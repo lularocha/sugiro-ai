@@ -3,40 +3,12 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="generative design — sugiro.ai" description="A collection of generative design projects by Lula Rocha using Processing, JavaScript, Python, and Adobe Illustrator — creative programming and algorithmic art." footerColClass="col-span-12 desktop:col-start-7 desktop:col-span-2">
-<style>
-  .list-section {
-    margin-top: 1rem;
-  }
-  .project-link {
-    position: relative;
-  }
-  .project-link::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: white;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-  }
-  .project-link:hover::after {
-    transform: scaleX(1);
-  }
-  @media (min-width: 960px) {
-    .about-section {
-      padding-right: 3rem;
-    }
-  }
-</style>
-  <main class="grid grid-cols-12 gap-4 desktop:items-start">
+  <main class="page-container">
     <!-- Site Title -->
     <section class="col-span-12 desktop:col-span-6">
       <a
         href="/"
-        class="text-[52px] font-extralight text-white"
+        class="site-title"
       >
         sugiro.ai
       </a>
@@ -44,26 +16,26 @@ import Layout from "../layouts/Layout.astro";
 
     <!-- Page Title + Description -->
     <section class="col-span-12 desktop:col-span-3 list-section about-section">
-      <h2 class="text-xl font-medium text-orange-500 mb-4">generative design</h2>
-      <p class="text-sm font-light" style="line-height: 1.8;">
+      <h2 class="section-heading">generative design</h2>
+      <p class="body-text" style="line-height: 1.65;">
         These are projects from the original Sugiro Design website when I started experimenting with creative programming using Processing, JavaScript and Python. The list also includes projects done with Adobe Illustrator Live Effects.
       </p>
     </section>
 
     <!-- Projects -->
     <section class="col-span-12 desktop:col-span-3 list-section">
-      <h2 class="text-xl font-medium text-orange-500 mb-4">projects</h2>
+      <h2 class="section-heading">projects</h2>
       <ul class="space-y-2">
-        <li><a href="https://sugiro.io/" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">connecting the dots</a></li>
-        <li><a href="https://sugiro.io/contador-de-letras/" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">letter counter</a></li>
-        <li><a href="https://sugiro.io/gerador-de-tipos/" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">type generator</a></li>
-        <li><a href="https://sugiro.io/mandelbrot-julia-set/" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">mandelbrot julia set</a></li>
-        <li><a href="https://sugiro.io/mandelbrot-original-set/" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">mandelbrot original set</a></li>
-        <li><a href="https://sugiro.io/infinito/" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">infinite scroll</a></li>
-        <li><a href="https://www.behance.net/gallery/41516233/Processing-with-Hype-01" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">processing with hype</a></li>
-        <li><a href="https://www.behance.net/gallery/41231549/Trihex-fractal" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">trihex pattern</a></li>
-        <li><a href="https://www.behance.net/gallery/41040015/Mondrian-Type" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">mondrian typeface</a></li>
-        <li><a href="https://www.behance.net/gallery/41079747/Scroll-Pen-Type" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">scroll pen typeface</a></li>
+        <li><a href="https://sugiro.io/" target="_blank" rel="noopener noreferrer" class="text-link body-text">connecting the dots</a></li>
+        <li><a href="https://sugiro.io/contador-de-letras/" target="_blank" rel="noopener noreferrer" class="text-link body-text">letter counter</a></li>
+        <li><a href="https://sugiro.io/gerador-de-tipos/" target="_blank" rel="noopener noreferrer" class="text-link body-text">type generator</a></li>
+        <li><a href="https://sugiro.io/mandelbrot-julia-set/" target="_blank" rel="noopener noreferrer" class="text-link body-text">mandelbrot julia set</a></li>
+        <li><a href="https://sugiro.io/mandelbrot-original-set/" target="_blank" rel="noopener noreferrer" class="text-link body-text">mandelbrot original set</a></li>
+        <li><a href="https://sugiro.io/infinito/" target="_blank" rel="noopener noreferrer" class="text-link body-text">infinite scroll</a></li>
+        <li><a href="https://www.behance.net/gallery/41516233/Processing-with-Hype-01" target="_blank" rel="noopener noreferrer" class="text-link body-text">processing with hype</a></li>
+        <li><a href="https://www.behance.net/gallery/41231549/Trihex-fractal" target="_blank" rel="noopener noreferrer" class="text-link body-text">trihex pattern</a></li>
+        <li><a href="https://www.behance.net/gallery/41040015/Mondrian-Type" target="_blank" rel="noopener noreferrer" class="text-link body-text">mondrian typeface</a></li>
+        <li><a href="https://www.behance.net/gallery/41079747/Scroll-Pen-Type" target="_blank" rel="noopener noreferrer" class="text-link body-text">scroll pen typeface</a></li>
       </ul>
     </section>
   </main>

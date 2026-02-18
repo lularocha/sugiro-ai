@@ -3,40 +3,12 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="more projects — sugiro.ai" description="Graphic and web design projects by Lula Rocha spanning over 30 years at Rocha Design and Metapix — from visual identities to institutional websites.">
-<style>
-  .list-section {
-    margin-top: 1rem;
-  }
-  .project-link {
-    position: relative;
-  }
-  .project-link::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: white;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-  }
-  .project-link:hover::after {
-    transform: scaleX(1);
-  }
-  @media (min-width: 960px) {
-    .about-section {
-      padding-right: 3rem;
-    }
-  }
-</style>
-  <main class="grid grid-cols-12 gap-4 desktop:items-start">
+  <main class="page-container">
     <!-- Site Title -->
     <section class="col-span-12 desktop:col-span-3">
       <a
         href="/"
-        class="text-[52px] font-extralight text-white"
+        class="site-title"
       >
         sugiro.ai
       </a>
@@ -44,66 +16,66 @@ import Layout from "../layouts/Layout.astro";
 
     <!-- About -->
     <section class="col-span-12 desktop:col-span-3 list-section about-section">
-      <h2 class="text-xl font-medium text-orange-500 mb-4">projects</h2>
-      <p class="text-sm font-light" style="line-height: 1.8;">
+      <h2 class="section-heading">projects</h2>
+      <p class="body-text" style="line-height: 1.65;">
         A collection of projects developed over more than 30 years of practice at Rocha Design and Metapix.
       </p>
     </section>
 
     <!-- Graphic Design -->
     <section class="col-span-12 desktop:col-span-3 list-section">
-      <h2 class="text-xl font-medium text-orange-500 mb-4">graphic design</h2>
+      <h2 class="section-heading">graphic design</h2>
       <ul class="space-y-2">
-        <li><a href="https://www.behance.net/gallery/182837623/Department-of-Anthropology-Princeton-University" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">princeton anthropology</a></li>
-        <li><a href="https://www.behance.net/gallery/218770761/Princeton-Anthropology-2023-24-Report" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">princeton anthropology report</a></li>
-        <li><a href="https://www.behance.net/gallery/182849905/Brazil-LAB-Princeton-University" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">princeton brazil lab</a></li>
-        <li><a href="https://www.behance.net/gallery/72781071/serrapilheira" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">serrapilheira</a></li>
-        <li><a href="https://www.behance.net/gallery/100294795/IEPS-Instituto-de-Estudos-para-Politicas-de-Saude" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">ieps</a></li>
-        <li><a href="https://www.behance.net/gallery/100293821/IMDS-Instituto-Mobilidade-e-Desenvolvimento-Social" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">imds</a></li>
-        <li><a href="https://www.behance.net/gallery/100298333/Rocinante" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">rocinante 1</a></li>
-        <li><a href="https://www.behance.net/gallery/182868747/Rocinante-Aplicacoes-da-Identidade-Visual" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">rocinante 2</a></li>
-        <li><a href="https://www.behance.net/gallery/549492/Aion-Editora" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">aion</a></li>
-        <li><a href="https://www.behance.net/gallery/100300425/Warwick-Econometrics" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">warwick econometrics</a></li>
-        <li><a href="https://www.behance.net/gallery/549502/Torta-Cia" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">torta & cia</a></li>
-        <li><a href="https://www.behance.net/gallery/40866453/Nucleo-para-Tecnologia-da-Informacao-INF-PUC-Rio" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">nti puc-rio</a></li>
-        <li><a href="https://www.behance.net/gallery/549467/Fundacao-Planetario" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">fundação planetário</a></li>
-        <li><a href="https://www.behance.net/gallery/40675971/Programa-de-Despoluicao-da-Baia-de-Guanabara" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">baia de guanabara</a></li>
-        <li><a href="https://www.behance.net/gallery/549333/Web-Science-Brasil" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">web science brazil</a></li>
-        <li><a href="https://www.behance.net/gallery/182804019/NASDA" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">nasda</a></li>
-        <li><a href="https://www.behance.net/gallery/41516233/Processing-with-Hype-01" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">processing with hype</a></li>
-        <li><a href="https://www.behance.net/gallery/42729965/Maremoto" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">maremoto</a></li>
-        <li><a href="https://www.behance.net/gallery/41231549/Trihex-fractal" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">trihex pattern</a></li>
-        <li><a href="https://www.behance.net/gallery/41153799/Caf-com-Leite" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">café com leite</a></li>
-        <li><a href="https://www.behance.net/gallery/41040015/Mondrian-Type" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">mondrian typeface</a></li>
-        <li><a href="https://www.behance.net/gallery/41079747/Scroll-Pen-Type" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">scroll pen typeface</a></li>
-        <li><a href="https://www.behance.net/gallery/100373555/Cancao-da-cabra-Sylvio-Fraga-Quinteto-e-Letieries-Leite" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">canção da cabra</a></li>
-        <li><a href="https://www.behance.net/gallery/100367069/O-enigma-Lexeu-Letieres-Leite-Quinteto" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">o enigma lexeu</a></li>
-        <li><a href="https://www.behance.net/gallery/100370595/Le-Penseur-Nelson-Angelo" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">o pensador</a></li>
-        <li><a href="https://www.behance.net/gallery/218770905/Jammerthal" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">jammerthal</a></li>
+        <li><a href="https://www.behance.net/gallery/182837623/Department-of-Anthropology-Princeton-University" target="_blank" rel="noopener noreferrer" class="text-link body-text">princeton anthropology</a></li>
+        <li><a href="https://www.behance.net/gallery/218770761/Princeton-Anthropology-2023-24-Report" target="_blank" rel="noopener noreferrer" class="text-link body-text">princeton anthropology report</a></li>
+        <li><a href="https://www.behance.net/gallery/182849905/Brazil-LAB-Princeton-University" target="_blank" rel="noopener noreferrer" class="text-link body-text">princeton brazil lab</a></li>
+        <li><a href="https://www.behance.net/gallery/72781071/serrapilheira" target="_blank" rel="noopener noreferrer" class="text-link body-text">serrapilheira</a></li>
+        <li><a href="https://www.behance.net/gallery/100294795/IEPS-Instituto-de-Estudos-para-Politicas-de-Saude" target="_blank" rel="noopener noreferrer" class="text-link body-text">ieps</a></li>
+        <li><a href="https://www.behance.net/gallery/100293821/IMDS-Instituto-Mobilidade-e-Desenvolvimento-Social" target="_blank" rel="noopener noreferrer" class="text-link body-text">imds</a></li>
+        <li><a href="https://www.behance.net/gallery/100298333/Rocinante" target="_blank" rel="noopener noreferrer" class="text-link body-text">rocinante 1</a></li>
+        <li><a href="https://www.behance.net/gallery/182868747/Rocinante-Aplicacoes-da-Identidade-Visual" target="_blank" rel="noopener noreferrer" class="text-link body-text">rocinante 2</a></li>
+        <li><a href="https://www.behance.net/gallery/549492/Aion-Editora" target="_blank" rel="noopener noreferrer" class="text-link body-text">aion</a></li>
+        <li><a href="https://www.behance.net/gallery/100300425/Warwick-Econometrics" target="_blank" rel="noopener noreferrer" class="text-link body-text">warwick econometrics</a></li>
+        <li><a href="https://www.behance.net/gallery/549502/Torta-Cia" target="_blank" rel="noopener noreferrer" class="text-link body-text">torta & cia</a></li>
+        <li><a href="https://www.behance.net/gallery/40866453/Nucleo-para-Tecnologia-da-Informacao-INF-PUC-Rio" target="_blank" rel="noopener noreferrer" class="text-link body-text">nti puc-rio</a></li>
+        <li><a href="https://www.behance.net/gallery/549467/Fundacao-Planetario" target="_blank" rel="noopener noreferrer" class="text-link body-text">fundação planetário</a></li>
+        <li><a href="https://www.behance.net/gallery/40675971/Programa-de-Despoluicao-da-Baia-de-Guanabara" target="_blank" rel="noopener noreferrer" class="text-link body-text">baia de guanabara</a></li>
+        <li><a href="https://www.behance.net/gallery/549333/Web-Science-Brasil" target="_blank" rel="noopener noreferrer" class="text-link body-text">web science brazil</a></li>
+        <li><a href="https://www.behance.net/gallery/182804019/NASDA" target="_blank" rel="noopener noreferrer" class="text-link body-text">nasda</a></li>
+        <li><a href="https://www.behance.net/gallery/41516233/Processing-with-Hype-01" target="_blank" rel="noopener noreferrer" class="text-link body-text">processing with hype</a></li>
+        <li><a href="https://www.behance.net/gallery/42729965/Maremoto" target="_blank" rel="noopener noreferrer" class="text-link body-text">maremoto</a></li>
+        <li><a href="https://www.behance.net/gallery/41231549/Trihex-fractal" target="_blank" rel="noopener noreferrer" class="text-link body-text">trihex pattern</a></li>
+        <li><a href="https://www.behance.net/gallery/41153799/Caf-com-Leite" target="_blank" rel="noopener noreferrer" class="text-link body-text">café com leite</a></li>
+        <li><a href="https://www.behance.net/gallery/41040015/Mondrian-Type" target="_blank" rel="noopener noreferrer" class="text-link body-text">mondrian typeface</a></li>
+        <li><a href="https://www.behance.net/gallery/41079747/Scroll-Pen-Type" target="_blank" rel="noopener noreferrer" class="text-link body-text">scroll pen typeface</a></li>
+        <li><a href="https://www.behance.net/gallery/100373555/Cancao-da-cabra-Sylvio-Fraga-Quinteto-e-Letieries-Leite" target="_blank" rel="noopener noreferrer" class="text-link body-text">canção da cabra</a></li>
+        <li><a href="https://www.behance.net/gallery/100367069/O-enigma-Lexeu-Letieres-Leite-Quinteto" target="_blank" rel="noopener noreferrer" class="text-link body-text">o enigma lexeu</a></li>
+        <li><a href="https://www.behance.net/gallery/100370595/Le-Penseur-Nelson-Angelo" target="_blank" rel="noopener noreferrer" class="text-link body-text">o pensador</a></li>
+        <li><a href="https://www.behance.net/gallery/218770905/Jammerthal" target="_blank" rel="noopener noreferrer" class="text-link body-text">jammerthal</a></li>
       </ul>
     </section>
 
     <!-- Web Design -->
     <section class="col-span-12 desktop:col-span-3 list-section">
-      <h2 class="text-xl font-medium text-orange-500 mb-4">web design</h2>
+      <h2 class="section-heading">web design</h2>
       <ul class="space-y-2">
-        <li><a href="https://biodesign.dad.puc-rio.br" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">biodesign.dad.puc-rio.br</a></li>
-        <li><a href="https://next.dad.puc-rio.br" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">next.dad.puc-rio.br</a></li>
-        <li><a href="https://dad.puc-rio.br" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">dad.puc-rio.br</a></li>
-        <li><a href="https://semanadesign.dad.puc-rio.br" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">semanadesign.dad.puc-rio.br</a></li>
-        <li><a href="https://lgd.dad.puc-rio.br" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">lgd.dad.puc-rio.br</a></li>
-        <li><a href="https://www.neam.puc-rio.br" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">neam.puc-rio.br</a></li>
-        <li><a href="https://cdem.fil.puc-rio.br" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">cdem.fil.puc-rio.br</a></li>
-        <li><a href="https://lepecad.letras.puc-rio.br/" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">lepecad.letras.puc-rio.br</a></li>
-        <li><a href="http://ep.dsi.puc-rio.br" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">ep.dsi.puc-rio.br</a></li>
-        <li><a href="https://dexpo.dad.puc-rio.br" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">dexpo.dad.puc-rio.br</a></li>
-        <li><a href="http://www.central.ccs.puc-rio.br" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">central.ccs.puc-rio.br</a></li>
-        <li><a href="http://nasda.ccs.puc-rio.br" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">nasda.ccs.puc-rio.br</a></li>
-        <li><a href="https://rocinante.com.br" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">rocinante.com.br</a></li>
-        <li><a href="https://kognoeconomics.com.br" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">kognoeconomics.com.br</a></li>
-        <li><a href="http://ceoe.org.br" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">ceoe.org.br</a></li>
-        <li><a href="https://21bitcoin.info" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">21bitcoin.info</a></li>
-        <li><a href="https://sugiro.io" target="_blank" rel="noopener noreferrer" class="project-link text-sm font-light">sugiro.io</a></li>
+        <li><a href="https://biodesign.dad.puc-rio.br" target="_blank" rel="noopener noreferrer" class="text-link body-text">biodesign.dad.puc-rio.br</a></li>
+        <li><a href="https://next.dad.puc-rio.br" target="_blank" rel="noopener noreferrer" class="text-link body-text">next.dad.puc-rio.br</a></li>
+        <li><a href="https://dad.puc-rio.br" target="_blank" rel="noopener noreferrer" class="text-link body-text">dad.puc-rio.br</a></li>
+        <li><a href="https://semanadesign.dad.puc-rio.br" target="_blank" rel="noopener noreferrer" class="text-link body-text">semanadesign.dad.puc-rio.br</a></li>
+        <li><a href="https://lgd.dad.puc-rio.br" target="_blank" rel="noopener noreferrer" class="text-link body-text">lgd.dad.puc-rio.br</a></li>
+        <li><a href="https://www.neam.puc-rio.br" target="_blank" rel="noopener noreferrer" class="text-link body-text">neam.puc-rio.br</a></li>
+        <li><a href="https://cdem.fil.puc-rio.br" target="_blank" rel="noopener noreferrer" class="text-link body-text">cdem.fil.puc-rio.br</a></li>
+        <li><a href="https://lepecad.letras.puc-rio.br/" target="_blank" rel="noopener noreferrer" class="text-link body-text">lepecad.letras.puc-rio.br</a></li>
+        <li><a href="http://ep.dsi.puc-rio.br" target="_blank" rel="noopener noreferrer" class="text-link body-text">ep.dsi.puc-rio.br</a></li>
+        <li><a href="https://dexpo.dad.puc-rio.br" target="_blank" rel="noopener noreferrer" class="text-link body-text">dexpo.dad.puc-rio.br</a></li>
+        <li><a href="http://www.central.ccs.puc-rio.br" target="_blank" rel="noopener noreferrer" class="text-link body-text">central.ccs.puc-rio.br</a></li>
+        <li><a href="http://nasda.ccs.puc-rio.br" target="_blank" rel="noopener noreferrer" class="text-link body-text">nasda.ccs.puc-rio.br</a></li>
+        <li><a href="https://rocinante.com.br" target="_blank" rel="noopener noreferrer" class="text-link body-text">rocinante.com.br</a></li>
+        <li><a href="https://kognoeconomics.com.br" target="_blank" rel="noopener noreferrer" class="text-link body-text">kognoeconomics.com.br</a></li>
+        <li><a href="http://ceoe.org.br" target="_blank" rel="noopener noreferrer" class="text-link body-text">ceoe.org.br</a></li>
+        <li><a href="https://21bitcoin.info" target="_blank" rel="noopener noreferrer" class="text-link body-text">21bitcoin.info</a></li>
+        <li><a href="https://sugiro.io" target="_blank" rel="noopener noreferrer" class="text-link body-text">sugiro.io</a></li>
       </ul>
     </section>
   </main>
