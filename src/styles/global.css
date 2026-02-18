@@ -3,4 +3,17 @@
 @theme {
   --font-sans: "DM Sans", sans-serif;
   --color-dark: #1a1a1a;
+  --breakpoint-desktop: 960px;
+}
+
+html {
+  font-size: 1.3125rem; /* 21px */
+}
+
+h2 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 300;
 }
