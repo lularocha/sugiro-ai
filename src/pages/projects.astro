@@ -7,16 +7,32 @@ import Layout from "../layouts/Layout.astro";
   .list-section {
     margin-top: 1rem;
   }
+  h2 {
+    padding-bottom: 1rem;
+  }
+  @media (min-width: 960px) {
+    .about-section {
+      padding-right: 3rem;
+    }
+  }
 </style>
   <main class="grid grid-cols-12 gap-4 desktop:items-start">
     <!-- Site Title -->
-    <section class="col-span-12 desktop:col-span-6">
+    <section class="col-span-12 desktop:col-span-3">
       <a
         href="/"
         class="text-[52px] font-extralight text-white transition-opacity duration-200 hover:opacity-70"
       >
         sugiro.ai
       </a>
+    </section>
+
+    <!-- About -->
+    <section class="col-span-12 desktop:col-span-3 list-section about-section">
+      <h2 class="text-xl font-medium text-orange-500 mb-4">Projects</h2>
+      <p class="text-sm font-light" style="line-height: 1.8;">
+        Projects developed over more than 30 years at RochaDesign (founded in 1995) and Metapix (2011).
+      </p>
     </section>
 
     <!-- Graphic Design -->
