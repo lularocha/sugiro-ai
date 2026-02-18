@@ -4,9 +4,10 @@ import Footer from "../components/Footer.astro";
 
 interface Props {
   title?: string;
+  footerColClass?: string;
 }
 
-const { title = "sugiro.ai" } = Astro.props;
+const { title = "sugiro.ai", footerColClass } = Astro.props;
 ---
 
 <!doctype html>
@@ -25,6 +26,6 @@ const { title = "sugiro.ai" } = Astro.props;
   </head>
   <body class="min-h-screen bg-dark text-white font-sans antialiased pt-1 px-6 desktop:px-12 pb-12">
     <slot />
-    <Footer />
+    <Footer colClass={footerColClass} />
   </body>
 </html>
