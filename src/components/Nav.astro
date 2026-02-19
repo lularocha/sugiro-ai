@@ -3,14 +3,15 @@ interface Props {
   colClass?: string;
 }
 const { colClass = "col-span-12 desktop:col-span-2" } = Astro.props;
+const currentPath = Astro.url.pathname;
 ---
 
 <nav class={`${colClass} flex flex-col gap-2 pt-6`}>
-  <a href="/ai-projects" class="text-link body-text text-white">ai projects</a>
-  <a href="/generative-design" class="text-link body-text text-white">generative design</a>
-  <a href="/more-projects" class="text-link body-text text-white">more projects</a>
-  <a href="/about-me" class="text-link body-text text-white">about me</a>
-  <a href="/about-sugiro" class="text-link body-text text-white">about sugiro</a>
+  <a href="/ai-projects" class={`text-link body-text text-white${currentPath === '/ai-projects' ? ' active' : ''}`}>ai projects</a>
+  <a href="/generative-design" class={`text-link body-text text-white${currentPath === '/generative-design' ? ' active' : ''}`}>generative design</a>
+  <a href="/more-projects" class={`text-link body-text text-white${currentPath === '/more-projects' ? ' active' : ''}`}>more projects</a>
+  <a href="/about-me" class={`text-link body-text text-white${currentPath === '/about-me' ? ' active' : ''}`}>about me</a>
+  <a href="/about-sugiro" class={`text-link body-text text-white${currentPath === '/about-sugiro' ? ' active' : ''}`}>about sugiro</a>
   <a href="https://x.com/lularocha" target="_blank" rel="noopener noreferrer" class="text-link body-text text-white">follow me on X</a>
   <a href="https://be.net/lularocha" target="_blank" rel="noopener noreferrer" class="text-link body-text text-white">be.net/lularocha</a>
   <a href="https://lularocha.net/" target="_blank" rel="noopener noreferrer" class="text-link body-text text-white">lularocha.net</a>
@@ -18,3 +19,16 @@ const { colClass = "col-span-12 desktop:col-span-2" } = Astro.props;
   <a href="https://rochadesign.com.br/" target="_blank" rel="noopener noreferrer" class="text-link body-text text-white">rochadesign.com.br</a>
   <a href="https://sugiro.io" target="_blank" rel="noopener noreferrer" class="text-link body-text text-white">sugiro.io</a>
 </nav>
+
+<style>
+  nav a {
+    position: relative;
+  }
+  a.active::before {
+    content: '•';
+    position: absolute;
+    top: 2px;
+    left: -0.875rem;
+    color: #ff6600;
+  }
+</style>
