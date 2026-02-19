@@ -5,13 +5,11 @@ import Footer from "../components/Footer.astro";
 interface Props {
   title?: string;
   description?: string;
-  footerColClass?: string;
 }
 
 const {
   title = "sugiro.ai",
   description = "Lula Rocha's portfolio — design tools, AI projects, and creative work at the intersection of art, design, and technology.",
-  footerColClass,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://sugiro.ai");
@@ -54,7 +52,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://sugiro.a
     <div class="flex-1">
       <slot />
     </div>
-    <Footer colClass={footerColClass} />
+    <Footer />
 
     <button
       id="scroll-to-top"

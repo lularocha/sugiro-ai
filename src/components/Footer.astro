@@ -1,41 +1,6 @@
 ---
-interface Props {
-  colClass?: string;
-}
-const { colClass = "col-span-12 desktop:col-span-2" } = Astro.props;
 ---
 
-<style>
-  .footer-link {
-    position: relative;
-    width: fit-content;
-  }
-  .footer-link::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: white;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-  }
-  .footer-link:hover::after {
-    transform: scaleX(1);
-  }
-</style>
-
-<footer class="mt-16 pt-8 grid grid-cols-12 gap-4">
-  <div class={`${colClass} flex flex-col gap-2 text-sm font-light`}>
-    <a href="/about-me" class="footer-link text-white">about me</a>
-    <a href="/about-sugiro" class="footer-link text-white">about sugiro</a>
-<a href="https://x.com/lularocha" target="_blank" rel="noopener noreferrer" class="footer-link text-white">follow me on X</a>
-    <a href="https://be.net/lularocha" target="_blank" rel="noopener noreferrer" class="footer-link text-white">be.net/lularocha</a>
-    <a href="https://lularocha.net/" target="_blank" rel="noopener noreferrer" class="footer-link text-white">lularocha.net</a>
-    <a href="https://metapix.com.br" target="_blank" rel="noopener noreferrer" class="footer-link text-white">metapix.com.br</a>
-    <a href="https://rochadesign.com.br/" target="_blank" rel="noopener noreferrer" class="footer-link text-white">rochadesign.com.br</a>
-    <a href="https://sugiro.io" target="_blank" rel="noopener noreferrer" class="footer-link text-white">sugiro.io</a>
-  </div>
+<footer class="mt-4 pt-4">
+  <p class="body-text text-white/40">© lula rocha 2026</p>
 </footer>

@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
 ---
 
 <Layout title="more projects — sugiro.ai" description="Graphic and web design projects by Lula Rocha spanning over 30 years at Rocha Design and Metapix — from visual identities to institutional websites.">
@@ -12,14 +13,6 @@ import Layout from "../layouts/Layout.astro";
       >
         sugiro.ai
       </a>
-    </section>
-
-    <!-- About -->
-    <section class="col-span-12 desktop:col-span-3 list-section about-section">
-      <h2 class="section-heading">projects</h2>
-      <p class="body-text" style="line-height: 1.65;">
-        A collection of projects developed over more than 30 years of practice at Rocha Design and Metapix.
-      </p>
     </section>
 
     <!-- Graphic Design -->
@@ -78,5 +71,7 @@ import Layout from "../layouts/Layout.astro";
         <li><a href="https://sugiro.io" target="_blank" rel="noopener noreferrer" class="text-link body-text">sugiro.io</a></li>
       </ul>
     </section>
+
+    <Nav colClass="col-span-12 desktop:col-start-11 desktop:col-span-2" />
   </main>
 </Layout>

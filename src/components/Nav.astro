@@ -1,0 +1,17 @@
+---
+interface Props {
+  colClass?: string;
+}
+const { colClass = "col-span-12 desktop:col-span-2" } = Astro.props;
+---
+
+<nav class={`${colClass} flex flex-col gap-2 pt-6`}>
+  <a href="/about-me" class="text-link body-text text-white">about me</a>
+  <a href="/about-sugiro" class="text-link body-text text-white">about sugiro</a>
+  <a href="https://x.com/lularocha" target="_blank" rel="noopener noreferrer" class="text-link body-text text-white">follow me on X</a>
+  <a href="https://be.net/lularocha" target="_blank" rel="noopener noreferrer" class="text-link body-text text-white">be.net/lularocha</a>
+  <a href="https://lularocha.net/" target="_blank" rel="noopener noreferrer" class="text-link body-text text-white">lularocha.net</a>
+  <a href="https://metapix.com.br" target="_blank" rel="noopener noreferrer" class="text-link body-text text-white">metapix.com.br</a>
+  <a href="https://rochadesign.com.br/" target="_blank" rel="noopener noreferrer" class="text-link body-text text-white">rochadesign.com.br</a>
+  <a href="https://sugiro.io" target="_blank" rel="noopener noreferrer" class="text-link body-text text-white">sugiro.io</a>
+</nav>

@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import Nav from "../components/Nav.astro";
 ---
 
 <Layout description="Lula Rocha's portfolio — design tools, AI projects, and creative work at the intersection of art, design, and technology.">
@@ -48,4 +49,8 @@ import Header from "../components/Header.astro";
       </div>
     </section>
   </main>
+
+  <div class="mt-16 pt-8 grid grid-cols-12 gap-4">
+    <Nav />
+  </div>
 </Layout>

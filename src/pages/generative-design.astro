@@ -1,8 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
 ---
 
-<Layout title="generative design — sugiro.ai" description="A collection of generative design projects by Lula Rocha using Processing, JavaScript, Python, and Adobe Illustrator — creative programming and algorithmic art." footerColClass="col-span-12 desktop:col-start-7 desktop:col-span-2">
+<Layout title="generative design — sugiro.ai" description="A collection of generative design projects by Lula Rocha using Processing, JavaScript, Python, and Adobe Illustrator — creative programming and algorithmic art.">
   <main class="page-container">
     <!-- Site Title -->
     <section class="col-span-12 desktop:col-span-3">
@@ -38,5 +39,7 @@ import Layout from "../layouts/Layout.astro";
         <li><a href="https://www.behance.net/gallery/41079747/Scroll-Pen-Type" target="_blank" rel="noopener noreferrer" class="text-link body-text">scroll pen typeface</a></li>
       </ul>
     </section>
+
+    <Nav colClass="col-span-12 desktop:col-start-11 desktop:col-span-2" />
   </main>
 </Layout>

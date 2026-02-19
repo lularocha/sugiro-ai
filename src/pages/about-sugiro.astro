@@ -1,8 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
 ---
 
-<Layout title="about sugiro — sugiro.ai" description="sugiro.ai collects Lula Rocha's recent work with AI tools, building on years of creative programming and code-driven design experiments at sugiro.io." footerColClass="col-span-12 desktop:col-start-4 desktop:col-span-2">
+<Layout title="about sugiro — sugiro.ai" description="sugiro.ai collects Lula Rocha's recent work with AI tools, building on years of creative programming and code-driven design experiments at sugiro.io.">
   <main class="page-container">
     <!-- Site Title -->
     <section class="col-span-12 desktop:col-span-3">
@@ -27,5 +28,7 @@ import Layout from "../layouts/Layout.astro";
         Have a project in mind or just want to say hello? <a href="https://x.com/lularocha" target="_blank" rel="noopener noreferrer" class="text-link">Follow me</a> or <a href="mailto:lularocha@protonmail.com" class="text-link">send email</a>.
       </p>
     </section>
+
+    <Nav colClass="col-span-12 desktop:col-start-11 desktop:col-span-2" />
   </main>
 </Layout>
