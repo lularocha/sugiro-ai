@@ -3,7 +3,7 @@ interface Props {
   colClass?: string;
 }
 const { colClass = "col-span-12 desktop:col-span-2" } = Astro.props;
-const currentPath = Astro.url.pathname;
+const currentPath = Astro.url.pathname.replace(/\/$/, '');
 ---
 
 <nav class={`${colClass} flex flex-col gap-2 pt-6`}>
