@@ -8,8 +8,8 @@ const currentPath = Astro.url.pathname.replace(/\/$/, '');
 
 <nav class={`${colClass} flex flex-col gap-2 pt-6`}>
   <a href="/ai-projects" class={`text-link body-text text-white${currentPath === '/ai-projects' ? ' active' : ''}`}>ai projects</a>
-  <a href="/generative-design" class={`text-link body-text text-white${currentPath === '/generative-design' ? ' active' : ''}`}>generative design</a>
   <a href="/more-projects" class={`text-link body-text text-white${currentPath === '/more-projects' ? ' active' : ''}`}>more projects</a>
+  <a href="/generative-design" class={`text-link body-text text-white${currentPath === '/generative-design' ? ' active' : ''}`}>generative design</a>
   <a href="/about-me" class={`text-link body-text text-white${currentPath === '/about-me' ? ' active' : ''}`}>about me</a>
   <a href="/about-sugiro" class={`text-link body-text text-white${currentPath === '/about-sugiro' ? ' active' : ''}`}>about sugiro</a>
   <a href="https://x.com/lularocha" target="_blank" rel="noopener noreferrer" class="text-link body-text text-white mt-2 pt-4 border-t border-gray-600">follow me on X</a>

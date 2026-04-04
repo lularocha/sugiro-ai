@@ -36,6 +36,24 @@ html {
   margin-bottom: 1rem;
 }
 
+.section-heading-2 {
+    font-size: 0.75rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    color: #999999;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.section-heading-3 {
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
 .body-text {
   font-size: 0.875rem;
   line-height: 1.25rem;
