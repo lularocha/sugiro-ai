@@ -10,6 +10,21 @@ html {
   font-size: 1.3125rem; /* 21px */
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/dither-3.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: auto 100vh;
+  pointer-events: none;
+  z-index: -1;
+}
+
 .site-title {
   font-size: 58px;
   font-weight: 200;
@@ -37,21 +52,21 @@ html {
 }
 
 .section-heading-2 {
-    font-size: 0.75rem;
-    line-height: 1.75rem;
-    font-weight: 500;
-    color: #999999;
-    margin-top: 1rem;
-    margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: #999999;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 .section-heading-3 {
-    font-size: 0.875rem;
-    line-height: 1.75rem;
-    font-weight: 500;
-    color: #fff;
-    margin-top: 1.5rem;
-    margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .body-text {
@@ -66,7 +81,7 @@ html {
 }
 
 .text-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -83,7 +98,7 @@ html {
 }
 
 .text-link-dashed::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
